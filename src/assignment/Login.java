@@ -56,7 +56,8 @@ class LoginForm extends JFrame implements ActionListener{
         List userFound = db.findUser(email, password);
         System.out.println(userFound.size());
         if (userFound.size() == 3){
-            JOptionPane.showMessageDialog(null, "Logging in as '" + userFound.get(2) + "'");
+            GraphPanel graphPanel = new GraphPanel("pie chart...");
+            graphPanel.setVisible(true);
         } else{
             JOptionPane.showMessageDialog(null, "User not found");
         }

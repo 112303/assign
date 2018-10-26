@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class Database{
     
-  
+    
   private static final String dbClassName = "com.mysql.jdbc.Driver";
   private static final String CONNECTION = "jdbc:mysql://127.0.0.1/assignment";
   private static Properties p = new Properties();
